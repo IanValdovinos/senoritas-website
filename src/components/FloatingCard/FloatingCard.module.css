@@ -12,3 +12,21 @@
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
 }
+
+.starImageContainer {
+    height: 1.5rem; 
+    width: 1.5rem; 
+    overflow: hidden;
+
+    /* Child image adjustment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.starImageContainer img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -8,11 +8,19 @@ import BlackStar from '../../assets/images/icons/star_black.png';
 function FloatingCard({name, stars, text}) {
     const starsList = [];
     for (let i = 0; i < stars; i++) {
-        starsList.push(<img src={YellowStar} alt='Yellow rating star' width='25rem'/>);
+        starsList.push(
+            <div className={styles.starImageContainer}>
+                <img src={YellowStar} alt='Yellow rating star'/>
+            </div>   
+        );
     }
 
     for (let i = 0; i < 5 - stars; i++) {
-        starsList.push(<img src={BlackStar} alt='Black rating star' width='25rem'/>);
+        starsList.push(
+            <div className={styles.starImageContainer}>
+                <img src={BlackStar} alt='Black rating star'/>
+            </div>   
+        );
     }
 
     return ( 
