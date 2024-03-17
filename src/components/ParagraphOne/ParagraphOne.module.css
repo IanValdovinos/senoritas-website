@@ -1,6 +1,7 @@
 .paragraphOne {
     font-size: 1.6rem;
-    font-family: "Kalam", cursive;
+    /* font-family: "Kalam", cursive; */
+    font-family: "Neucha", cursive;
     font-weight: 400;
     font-style: normal;
 }

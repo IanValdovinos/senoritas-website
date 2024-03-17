@@ -39,6 +39,19 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Deployment Resources
+How to generate an SSH key and add it to GitHub Account:
+https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github
+
+How to deploy the React Application to GCP App Engine:
+https://javascript.plainenglish.io/quickly-deploy-your-react-app-on-googles-app-engine-6bb97480cc9c
+
+How to map a custom domain to App Engine instance: https://cloud.google.com/appengine/docs/legacy/standard/python/mapping-custom-domains
+
+How to add TXT record to Squarespace domain (for domain mapping): https://support.squarespace.com/hc/en-us/articles/360002101888-Adding-custom-DNS-records-to-your-Squarespace-managed-domain
+
+How to disable app and clean up project: https://cloud.google.com/appengine/docs/standard/python3/building-app/cleaning-up
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

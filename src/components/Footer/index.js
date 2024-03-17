@@ -13,18 +13,18 @@ function Footer() {
                 <HeadingTwo>Hours</HeadingTwo>
                 <ul>
                     <li><ParagraphOne>Monday - 11AM-8PM</ParagraphOne></li>
-                    <li><ParagraphOne>Monday - 11AM-8PM</ParagraphOne></li>
-                    <li><ParagraphOne>Monday - 11AM-8PM</ParagraphOne></li>
-                    <li><ParagraphOne>Monday - 11AM-8PM</ParagraphOne></li>
-                    <li><ParagraphOne>Monday - 11AM-8PM</ParagraphOne></li>
-                    <li><ParagraphOne>Monday - 11AM-8PM</ParagraphOne></li>
-                    <li><ParagraphOne>Monday - 11AM-8PM</ParagraphOne></li>
+                    <li><ParagraphOne>Tuesday - 11AM-8PM</ParagraphOne></li>
+                    <li><ParagraphOne>Wednesday - 11AM-8PM</ParagraphOne></li>
+                    <li><ParagraphOne>Thursday - 11AM-8PM</ParagraphOne></li>
+                    <li><ParagraphOne>Friday - 11AM-8PM</ParagraphOne></li>
+                    <li><ParagraphOne>Saturday - 11AM-8PM</ParagraphOne></li>
+                    <li><ParagraphOne>Sunday - 10:30AM-8PM</ParagraphOne></li>
                 </ul>
             </div>
 
             <div>
                 <HeadingTwo>Location</HeadingTwo>
-                <p>48758 Van Dyke Ave, Shelby Township, MI, 48317</p>
+                <ParagraphOne>48758 Van Dyke Ave, Shelby Township, MI, 48317</ParagraphOne>
                 <BaseButton additionalClassNames={styles.bannerButton} text='Order Now' color={process.env.REACT_APP_RED}/>
             </div>
 
