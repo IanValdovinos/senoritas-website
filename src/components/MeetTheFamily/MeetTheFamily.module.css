@@ -1,0 +1,40 @@
+.meetTheFamilySection {
+    background-color: black;
+    color: white;
+
+    height: fit-content;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 2rem 2rem;
+
+}
+
+.meetTheFamilyItem {
+    width: 90%;
+    text-align: center;
+}
+
+.meetTheFamilySection img {
+    width: 100%;
+    border: 4px dashed white;
+}
+
+@media screen and (max-width: 65rem) {
+    .meetTheFamilySection {
+        background-color: black;
+        color: white;
+    
+        height: fit-content;
+    
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        justify-items: center;
+        align-items: center;
+        padding: 2rem 0rem;
+    
+    }
+}

@@ -1,0 +1,45 @@
+.navbarContainer {
+    background-color: #000000;
+    width: fit-content;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 100rem;
+    align-items: center;
+    margin-top: 1rem;
+    z-index: 100;
+
+    /* Floating navigation bar */
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    /* Font */
+    font-size: 1.6rem;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+}
+
+.navbarItem {
+    display: inline;
+    margin: 0 2rem;
+}
+
+.navbarLink {
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+.navbarLink:hover {
+    color: #a22015;
+}
+
+.navbarLogo {
+    width: 9rem;
+}

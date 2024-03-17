@@ -1,0 +1,44 @@
+.deliveryAvailableSection {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.deliveryAvailableContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.deliveryAvailableSectionDD {
+    width: 100%;
+}
+
+.deliveryAvailableSectionUE {
+    width: 65%;
+}
+
+@media screen and (max-width: 65rem) {
+    .deliveryAvailableContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }   
+}
+
+@media screen and (max-width: 45rem) {
+    .deliveryAvailableContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+    
+}

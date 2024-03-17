@@ -1,0 +1,29 @@
+.behindTheScenesContainer {
+    background-image: url("../../assets/images/paper_texture_1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.behindTheScenesItem {
+    width: 90%;
+    text-align: center;
+}
+
+.behindTheScenesVideo {
+    width: 100%;
+}
+
+@media screen and (max-width: 65rem) {
+    .behindTheScenesContainer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        padding: 4rem 0rem;
+    }
+}

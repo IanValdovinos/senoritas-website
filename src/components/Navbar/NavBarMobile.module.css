@@ -1,0 +1,51 @@
+.topnav {
+    width: 100vw;
+    /* height: 5rem; */
+    min-height: 5rem;
+    overflow: hidden;
+    background-color: #000000;
+    position: fixed;
+    z-index: 1000;
+    display: none;
+}
+
+.myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbarLogo {
+    width: 9rem;
+}
+
+.hamburgerIcon {
+    width: 2.5rem;
+    margin: 1rem;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hamburgerIcon:hover {
+    cursor: pointer;
+}
+
+/* ---------- Media Queries -------- */
+@media screen and (max-width: 50rem) {
+    .topnav {
+        display: block;
+    }
+}

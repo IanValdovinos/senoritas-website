@@ -1,0 +1,98 @@
+.flipCard {
+    position: relative;
+    background-color: white;
+    width: 18rem;
+    height: 28rem;
+    padding: 0;
+
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    transform: translateZ(0);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipCard:hover .flipCardInner {
+    transform: rotateY(180deg) translateZ(0);
+}
+
+.flipCardFront, .flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flipCardFront {
+    background-color: #bbb;
+    color: black;
+}
+
+.flipCardBack {
+    background-color: rgb(162, 32, 21);
+    border: 6px solid black;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 0.5rem;
+}
+
+.flipCardTitle {
+    margin: 0;
+    padding: 0;
+    color: white;
+
+    font-size: 2.5rem;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flipCardTitleFront {
+    position: absolute;
+    bottom: 0%;
+    right: 1rem;
+}
+
+.flipCardTitleBack {
+
+}
+
+@media screen and (max-width: 45rem) {
+    .flipCard {
+        position: relative;
+        background-color: white;
+        width: 22rem;
+        height: 32rem;
+        padding: 0;
+    }
+
+    .flipCard:hover .flipCardInner {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    .flipCard {
+        position: relative;
+        background-color: white;
+        width: 17rem;
+        height: 32rem;
+        padding: 0;
+    }
+}

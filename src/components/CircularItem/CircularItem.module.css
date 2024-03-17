@@ -1,0 +1,17 @@
+.circularItem {
+    width: max-content;
+    color: white;
+    margin: 1rem 0;
+}
+
+.imgContainer {
+    
+}
+
+.circularItem img {
+    height: 15rem; 
+    width: 15rem; 
+    border-radius: 50%;
+    border: 3px solid white;
+    overflow: hidden;
+}

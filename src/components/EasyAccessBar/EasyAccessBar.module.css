@@ -1,0 +1,41 @@
+.easyAccessBar {
+    background-color: rgba(201, 76, 76, 0.8);
+    width: 5rem;
+    height: fit-content;
+    z-index: 100;
+    padding: 1rem 0;
+
+    /* Floating navigation bar */
+    position: fixed;
+    right: -1.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    text-align: center;
+}
+
+.easyAccessBarItem {
+    /* width: 3rem; */
+    width: 60%;
+    margin: 0.4rem 0;
+    left: 50%;
+    /* transform: translate(-50%, 0); */
+}
+
+@media screen and (max-width: 45rem) {
+    .easyAccessBar {
+        background-color: rgba(201, 76, 76, 0.8);
+        width: 3rem;
+        height: fit-content;
+        z-index: 100;
+        padding: .5rem 0;
+    
+        /* Floating navigation bar */
+        position: fixed;
+        right: -1.5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100px;
+        text-align: center;
+    } 
+}
