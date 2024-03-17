@@ -8,7 +8,9 @@ function CircularItem({title, src, alt}) {
     return ( 
         <div className={styles.circularItem}>
             <HeadingTwo>{title}</HeadingTwo>
-            <img src={src} alt={alt}/>
+            <div className={styles.imgContainer}>
+                <img src={src} alt={alt}/>
+            </div>
         </div>
      );
 }
