@@ -21,10 +21,6 @@ import EasyAccessBar from './components/EasyAccessBar';
 function App() {
   return (
     <div>
-
-      {/* ----------------------- Favicon --------------------------  */}
-      <link rel="icon" href="" />
-
       {/* ----------------------- Fonts -------------------------- */}
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>

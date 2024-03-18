@@ -4,7 +4,8 @@ import BaseButton from '../BaseButton';
 
 // Images and Videos
 import BannerVideo from '../../assets/videos/taco-vid-2.webm';
-import Logo from "../../assets/images/logo_transparent.png"
+import BannerImage from '../../assets/images/top_taco_view.jpg';
+import Logo from "../../assets/images/logo_transparent.png";
 
 function Banner() {
 
@@ -16,7 +17,7 @@ function Banner() {
         <div className={styles.banner}>
 
             <div className={styles.bannerVideo}>
-                <video className={styles.bannerVideoContent} autoPlay muted loop>
+                <video className={styles.bannerVideoContent} autoPlay muted loop poster={BannerImage}>
                     <source src={BannerVideo} type="video/webm" />
                     Your browser is not supported!
                 </video>
