@@ -9,7 +9,7 @@ import Logo from "../../assets/images/logo_transparent.png";
 
 function Banner() {
 
-    const handleClick = () => {
+    const handleOrderNowClick = () => {
         window.location.href = 'https://senoritasmexicanfood.smartonlineorder.com/';
     }
 
@@ -28,7 +28,7 @@ function Banner() {
 
                 <h1 className={styles.bannerHeading}>La Vida Sin Comida Mexicana No Es Vida</h1>
 
-                <BaseButton additionalClassNames={styles.bannerButton} text='Order Now' color={process.env.REACT_APP_RED} onClick={handleClick}/>
+                <BaseButton additionalClassNames={styles.bannerButton} text='Order Now' color={process.env.REACT_APP_RED} onClick={handleOrderNowClick}/>
             </div>
             
         </div>

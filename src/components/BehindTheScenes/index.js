@@ -11,6 +11,10 @@ import BehindTheScenesVideo from '../../assets/videos/about_video.mov';
 import FamilyPicture from '../../assets/images/family_potrait.jpeg';
 
 function BehindTheScenes() {
+    const handleOrderNowClick = () => {
+        window.location.href = 'https://senoritasmexicanfood.smartonlineorder.com/';
+    }
+
     return ( 
         <div>
             <div className={`${styles.behindTheScenesContainer}`}>
@@ -19,7 +23,7 @@ function BehindTheScenes() {
                     <ParagraphOne>
                         At Señoritas we embrace our culture to give you an authentic experience. Our food is handmade and crafted by the most experienced cooks. Made fresh everyday and served to our wonderful customers who want to taste the authentic flavor in a matter of minutes.
                     </ParagraphOne>
-                    <BaseButton additionalClassNames={styles.bannerButton} text='Order Now' color={process.env.REACT_APP_RED}/>
+                    <BaseButton onClick={handleOrderNowClick} additionalClassNames={styles.bannerButton} text='Order Now' color={process.env.REACT_APP_RED}/>
                 </div>
 
                 <div className={styles.behindTheScenesItem}>

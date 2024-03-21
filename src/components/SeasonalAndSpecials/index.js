@@ -8,7 +8,6 @@ import BaseButton from '../BaseButton';
 import CustomCarousel from '../CustomCarousel';
 
 // Images
-import StockTacoImage from '../../assets/images/stock_taco.jpeg';
 import MenudoImage from '../../assets/images/test_images/menudo.jpeg';
 import Pozole from '../../assets/images/test_images/pozole.jpeg';
 import CamaronCaldo from '../../assets/images/test_images/caldo-camaron.jpeg';
@@ -17,6 +16,10 @@ import ChileRelleno from '../../assets/images/test_images/chile-relleno.jpeg';
 import HuaracheNopal from '../../assets/images/test_images/huarache_nopal.jpeg';
 
 function SeasonalAndSpecials() {
+    const handleOrderNowClick = () => {
+        window.location.href = 'https://senoritasmexicanfood.smartonlineorder.com/';
+    }
+
     return ( 
         <div>
             <div className={styles.seasonalAndSpecialsSection}>
@@ -53,7 +56,7 @@ function SeasonalAndSpecials() {
                         </CustomCarousel>
                     </div>
 
-                    <BaseButton additionalClassNames={styles.bannerButton} text='Order Now' color={process.env.REACT_APP_RED}/>
+                    <BaseButton onClick={handleOrderNowClick} additionalClassNames={styles.bannerButton} text='Order Now' color={process.env.REACT_APP_RED}/>
                 </div>
             </div>
         </div>
