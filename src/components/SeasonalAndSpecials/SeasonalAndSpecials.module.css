@@ -30,8 +30,9 @@
 }
 
 @media screen and (max-width: 65rem) {
-    .seasonalAndSpecialsContainer {
-        
+    .seasonalAndSpecialsSection {
+        background-image: url('../../assets/images/mural_vertical.jpg');
+        padding: 0;
     }
 
     .seasonalAndSpecialsItemContainer {
@@ -42,10 +43,6 @@
 }
 
 @media screen and (max-width: 45rem) {
-    .seasonalAndSpecialsSection {
-        background-image: none;
-        padding: 0;
-    }
 
     .seasonalAndSpecialsContainer {
         background-image: linear-gradient(to bottom right, rgba(62, 62, 62, 0.95), rgba(168, 168, 168, 0.8));
