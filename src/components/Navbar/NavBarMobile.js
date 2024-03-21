@@ -1,17 +1,20 @@
-import React, {useState} from 'react';
-import { NavLink } from "react-router-dom";
+import React from 'react';
 import styles from './NavBarMobile.module.css';
 
 // Image imports
 import Logo from '../../assets/images/logo_transparent.png';
 import Hamburger from '../../assets/images/icons/white_hamburger_icon.png';
 
-function NavBarMobile() {
+function NavBarMobile({children}) {
 
-    // Collapse the navigation bar upon page selection
+    // Collapse the navigation bar and scroll to top of the page upon page selection
     const handleClick = () => {
         var linkContainer = document.getElementById('links');
         linkContainer.style.display = "none";
+
+        window.scrollTo({
+            top: 0
+        });
     };
 
     // Opens and closes the navbar when the hamburger icon is pressed
@@ -25,35 +28,19 @@ function NavBarMobile() {
         }
     }
 
+    const childrenWithProps = React.Children.map(children, (child, index) => {
+        return React.cloneElement(child, {
+            onClick: () => handleClick(index)
+        });
+    });
+
     return ( 
         <div>
             <div className={styles.topnav}>
                 <img className={styles.navbarLogo} src={Logo}  alt="Restaurant logo"/>
 
                 <div className={styles.myLinks} id='links'>
-                    <NavLink onClick={handleClick} className={styles.navbarLink} to="/">
-                        Home
-                    </NavLink>
-
-                    <NavLink onClick={handleClick} className={styles.navbarLink} to="/about">
-                        About
-                    </NavLink>
-
-                    <NavLink onClick={handleClick} className={styles.navbarLink} to="/">
-                        Menu
-                    </NavLink>
-
-                    <NavLink onClick={handleClick} className={styles.navbarLink} to="/">
-                        Catering
-                    </NavLink>
-
-                    <NavLink onClick={handleClick} className={styles.navbarLink} to="/about">
-                        Contact
-                    </NavLink>
-
-                    <NavLink onClick={handleClick} className={styles.navbarLink} to="/about">
-                        Shop
-                    </NavLink>
+                    { childrenWithProps }
                 </div>
 
                 <img className={styles.hamburgerIcon} src={Hamburger} onClick={onHamburgerClick}  alt="Hamburger Icon"/>

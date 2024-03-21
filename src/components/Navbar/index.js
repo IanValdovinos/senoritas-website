@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import styles from './NavBar.module.css';
 
 // Image imports
-import bannerImage from '../../assets/images/logo_transparent.png';
 
 // Components
 import NavBarDesktop from "./NavBarDesktop";
@@ -13,7 +12,32 @@ function Navbar() {
   return (
     <div>
         <NavBarDesktop />
-        <NavBarMobile />
+
+        <NavBarMobile>
+          <NavLink className={styles.navbarLink} to="/">
+              Home
+          </NavLink>
+
+          <NavLink className={styles.navbarLink} to="/about">
+              About
+          </NavLink>
+
+          <NavLink className={styles.navbarLink} to="/">
+              Menu
+          </NavLink>
+
+          <NavLink className={styles.navbarLink} to="/">
+              Catering
+          </NavLink>
+
+          <NavLink className={styles.navbarLink} to="/about">
+              Contact
+          </NavLink>
+
+          <NavLink className={styles.navbarLink} to="/about">
+              Shop
+          </NavLink>
+        </NavBarMobile>
     </div>
   );
 }

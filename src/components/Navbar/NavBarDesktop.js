@@ -7,24 +7,31 @@ import styles from './NavBarDesktop.module.css';
 import bannerImage from '../../assets/images/logo_transparent.png';
 
 function NavBarDesktop() {
+    // Scroll to top of the page upon page selection
+    const handleClick = () => {
+        window.scrollTo({
+            top: 0
+        });
+    };
+
     return ( 
         <div>
             <nav className="navbar">
                 <div className={styles.navbarContainer}>
                     <div className={styles.navbarItem}>
-                        <NavLink className={styles.navbarLink} to="/">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/">
                             Home
                         </NavLink>
                     </div>
 
                     <div className={styles.navbarItem}>
-                        <NavLink className={styles.navbarLink} to="/about">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/about">
                             About
                         </NavLink>
                     </div>
 
                     <div className={styles.navbarItem}>
-                        <NavLink className={styles.navbarLink} to="/">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/">
                             Menu
                         </NavLink>
                     </div>
@@ -34,19 +41,19 @@ function NavBarDesktop() {
                     </div>
 
                     <div className={styles.navbarItem}>
-                        <NavLink className={styles.navbarLink} to="/">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/">
                             Catering
                         </NavLink>
                     </div>
 
                     <div className={styles.navbarItem}>
-                        <NavLink className={styles.navbarLink} to="/about">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/about">
                             Contact
                         </NavLink>
                     </div>
                     
                     <div className={styles.navbarItem}>
-                        <NavLink className={styles.navbarLink} to="/about">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/about">
                             Shop
                         </NavLink>
                     </div>
