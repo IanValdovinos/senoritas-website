@@ -31,7 +31,7 @@ function NavBarDesktop() {
                     </div>
 
                     <div className={styles.navbarItem}>
-                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/menu">
                             Menu
                         </NavLink>
                     </div>
@@ -41,19 +41,19 @@ function NavBarDesktop() {
                     </div>
 
                     <div className={styles.navbarItem}>
-                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/catering">
                             Catering
                         </NavLink>
                     </div>
 
                     <div className={styles.navbarItem}>
-                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/about">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/contact">
                             Contact
                         </NavLink>
                     </div>
                     
                     <div className={styles.navbarItem}>
-                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/about">
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/shop">
                             Shop
                         </NavLink>
                     </div>

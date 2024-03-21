@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from "react";
 
@@ -12,6 +11,10 @@ import {
 // Pages
 import Home from "./pages";
 import About from "./pages/about";
+import Menu from './pages/menu';
+import Catering from './pages/catering';
+import Contact from './pages/contact';
+import Shop from './pages/shop';
 
 // Components
 import Navbar from "./components/Navbar";
@@ -51,6 +54,10 @@ function App() {
           <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/catering" element={<Catering />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/shop" element={<Shop />} />
           </Routes>
 
           {/* Footer */}

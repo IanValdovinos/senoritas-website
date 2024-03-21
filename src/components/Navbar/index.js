@@ -22,19 +22,19 @@ function Navbar() {
               About
           </NavLink>
 
-          <NavLink className={styles.navbarLink} to="/">
+          <NavLink className={styles.navbarLink} to="/menu">
               Menu
           </NavLink>
 
-          <NavLink className={styles.navbarLink} to="/">
+          <NavLink className={styles.navbarLink} to="/catering">
               Catering
           </NavLink>
 
-          <NavLink className={styles.navbarLink} to="/about">
+          <NavLink className={styles.navbarLink} to="/contact">
               Contact
           </NavLink>
 
-          <NavLink className={styles.navbarLink} to="/about">
+          <NavLink className={styles.navbarLink} to="/shop">
               Shop
           </NavLink>
         </NavBarMobile>
