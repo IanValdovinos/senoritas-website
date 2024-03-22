@@ -37,7 +37,9 @@ function NavBarDesktop() {
                     </div>
 
                     <div className={styles.navbarItem}>
-                        <img className={styles.navbarLogo} src={bannerImage}  alt="Restaurant logo"/>
+                        <NavLink onClick={handleClick} className={styles.navbarLink} to="/">
+                            <img className={styles.navbarLogo} src={bannerImage}  alt="Restaurant logo"/>
+                        </NavLink>
                     </div>
 
                     <div className={styles.navbarItem}>
