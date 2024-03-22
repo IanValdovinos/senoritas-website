@@ -8,7 +8,7 @@
     /* Floating navigation bar */
     position: fixed;
     right: -1.5%;
-    top: 50%;
+    top: 50vh;
     transform: translate(-50%, -50%);
     border-radius: 100px;
     text-align: center;

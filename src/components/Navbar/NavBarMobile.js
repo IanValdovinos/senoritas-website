@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './NavBarMobile.module.css';
+import { NavLink } from "react-router-dom";
 
 // Image imports
 import Logo from '../../assets/images/logo_transparent.png';
@@ -37,7 +38,9 @@ function NavBarMobile({children}) {
     return ( 
         <div>
             <div className={styles.topnav}>
-                <img className={styles.navbarLogo} src={Logo}  alt="Restaurant logo"/>
+                <NavLink to="/">
+                    <img className={styles.navbarLogo} src={Logo}  alt="Restaurant logo"/>
+                </NavLink>
 
                 <div className={styles.myLinks} id='links'>
                     { childrenWithProps }
