@@ -12,7 +12,7 @@ import FamilyPicture from '../../assets/images/family_potrait.jpeg';
 
 function BehindTheScenes() {
     const handleOrderNowClick = () => {
-        window.location.href = 'https://senoritasmexicanfood.smartonlineorder.com/';
+        window.location.href = 'https://senoritasmexicanfood.com/menu';
     }
 
     return ( 

@@ -17,7 +17,7 @@ import HuaracheNopal from '../../assets/images/test_images/huarache_nopal.jpeg';
 
 function SeasonalAndSpecials() {
     const handleOrderNowClick = () => {
-        window.location.href = 'https://senoritasmexicanfood.smartonlineorder.com/';
+        window.location.href = 'https://senoritasmexicanfood.com/menu';
     }
 
     return ( 

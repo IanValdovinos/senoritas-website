@@ -10,7 +10,7 @@ import Logo from "../../assets/images/logo_transparent.png";
 function Banner() {
 
     const handleOrderNowClick = () => {
-        window.location.href = 'https://senoritasmexicanfood.smartonlineorder.com/';
+        window.location.href = 'https://senoritasmexicanfood.com/menu';
     }
 
     return ( 
