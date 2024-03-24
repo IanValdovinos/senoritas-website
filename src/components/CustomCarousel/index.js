@@ -1,5 +1,6 @@
-import { React, Children, cloneElement } from "react";
+import { React, Children } from "react";
 import styles from './CustomCarousel.module.css';
+import { CustomNextArrow, CustomPrevArrow } from "./CustomArrows";
 
 // Carousel
 // https://www.npmjs.com/package/react-responsive-carousel

@@ -3,7 +3,7 @@ import styles from './Banner.module.css';
 import BaseButton from '../BaseButton';
 
 // Images and Videos
-import BannerVideo from '../../assets/videos/taco-vid-2.webm';
+import BannerVideo from '../../assets/videos/taco-catering-480.mov';
 import BannerImage from '../../assets/images/top_taco_view.jpg';
 import Logo from "../../assets/images/logo_transparent.png";
 

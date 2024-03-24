@@ -4,9 +4,11 @@ import styles from "./about.module.css";
 // Components
 import HeadingOne from "../components/HeadingOne";
 import ParagraphOne from "../components/ParagraphOne";
+import CustomCarousel from "../components/CustomCarousel";
 
 // Images and Videos
-import AboutImage from "../assets/images/family_potrait.jpeg";
+import AboutImageOne from "../assets/images/about/family_potrait.jpeg";
+import AboutImageTwo from "../assets/images/about/group_photo 3.jpg";
 
 function About() {
     return ( 
@@ -29,9 +31,14 @@ function About() {
 
             {/* Image section (Right) */}
             <div className={styles.aboutImageSection}>
-                <div className={styles.aboutImageContainer}>
-                    <img src={AboutImage} alt='Owning family potrait'/>
-                </div>
+                <CustomCarousel>
+                    <div className={styles.aboutImageContainer}>
+                        <img className={styles.aboutImage} src={AboutImageOne} alt='Owning family potrait'/>
+                    </div>
+                    <div className={styles.aboutImageContainer}>
+                        <img className={styles.aboutImage} src={AboutImageTwo} alt='Owning family potrait'/>
+                    </div>
+                </CustomCarousel>
             </div>
         </div>
      );
