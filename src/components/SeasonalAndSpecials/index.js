@@ -8,12 +8,12 @@ import BaseButton from '../BaseButton';
 import CustomCarousel from '../CustomCarousel';
 
 // Images
-import MenudoImage from '../../assets/images/test_images/menudo.jpeg';
-import Pozole from '../../assets/images/test_images/pozole.jpeg';
-import CamaronCaldo from '../../assets/images/test_images/caldo-camaron.jpeg';
-import BucheTaco from '../../assets/images/test_images/buche-tacos.webp';
-import ChileRelleno from '../../assets/images/test_images/chile-relleno.jpeg';
-import HuaracheNopal from '../../assets/images/test_images/huarache_nopal.jpeg';
+import SeasonalOne from '../../assets/images/seasonals/seasonals_one/menudo.jpeg';
+import SeasonalTwo from '../../assets/images/seasonals/seasonals_one/caldo-camaron.jpeg';
+import SeasonalThree from '../../assets/images/seasonals/seasonals_one/chile-relleno.JPG';
+import SeasonalFour from '../../assets/images/seasonals/seasonals_one/mojarra-frita.JPG';
+import SeasonalFive from '../../assets/images/seasonals/seasonals_one/coctel-camaron.jpg';
+import SeasonalSix from '../../assets/images/seasonals/seasonals_one/tostada-ceviche.jpg';
 
 function SeasonalAndSpecials() {
     const handleOrderNowClick = () => {
@@ -28,30 +28,30 @@ function SeasonalAndSpecials() {
 
                     {/* Desktop and iPad View */}
                     <div className={styles.seasonalAndSpecialsItemContainer}>
-                        <CircularItem title='Menudo' src={MenudoImage} />
-                        <CircularItem title='Pozole' src={Pozole} />
-                        <CircularItem title='Caldo de Camaron' src={CamaronCaldo} />
-                        <CircularItem title='Taco de Buche' src={BucheTaco} />
-                        <CircularItem title='Chile Relleno' src={ChileRelleno} />
-                        <CircularItem title='Huarache de Nopal' src={HuaracheNopal} />
+                        <CircularItem title='Menudo' src={SeasonalOne} />
+                        <CircularItem title='Caldo de Camaron' src={SeasonalTwo} />
+                        <CircularItem title='Chile Relleno' src={SeasonalThree} />
+                        <CircularItem title='Mojarra Frita' src={SeasonalFour} />
+                        <CircularItem title='Coctel de Camaron' src={SeasonalFive} />
+                        <CircularItem title='Tostada de Ceviche' src={SeasonalSix} />
                     </div>
 
                     {/* Mobile Carousel */}
                     <div className={styles.seasonalAndSpecialsCarousel}>
                         <CustomCarousel>
                             <div>
-                                <CircularItem title='Menudo' src={MenudoImage} />
-                                <CircularItem title='Pozole' src={Pozole} />
+                                <CircularItem title='Menudo' src={SeasonalOne} />
+                                <CircularItem title='Caldo de Camaron' src={SeasonalTwo} />
                             </div>
 
                             <div>
-                                <CircularItem title='Caldo de Camaron' src={CamaronCaldo} />
-                                <CircularItem title='Taco de Buche' src={BucheTaco} />
+                                <CircularItem title='Chile Relleno' src={SeasonalThree} />
+                                <CircularItem title='Mojarra Frita' src={SeasonalFour} />
                             </div>
 
                             <div>
-                                <CircularItem title='Chile Relleno' src={ChileRelleno} />
-                                <CircularItem title='Huarache de Nopal' src={HuaracheNopal} />
+                                <CircularItem title='Coctel de Camaron' src={SeasonalFive} />
+                                <CircularItem title='Tostada de Ceviche' src={SeasonalSix} />
                             </div>
                         </CustomCarousel>
                     </div>

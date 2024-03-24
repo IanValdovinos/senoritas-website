@@ -8,14 +8,13 @@ import HeadingOne from '../HeadingOne';
 import CustomCarousel from '../CustomCarousel';
 
 // Images
-import BirriaTaco from "../../assets/images/test_images/birria-tacos.jpeg";
-import Gorditas from "../../assets/images/test_images/gorditas.jpeg";
-import Burrito from "../../assets/images/test_images/burrito.webp";
-import Quesadilla from "../../assets/images/test_images/quesadilla.jpeg";
+import BirriaTaco from "../../assets/images/house_specials/birria-tacos.jpeg";
+import Tacos from "../../assets/images/house_specials/tacos.JPG";
+import Gorditas from "../../assets/images/house_specials/gorditas.jpeg";
+import Quesadilla from "../../assets/images/house_specials/quesadilla.jpeg";
 
 // Carousel
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 
 function HouseSpecials() {
     return ( 
@@ -27,7 +26,7 @@ function HouseSpecials() {
                 <div className={styles.bestInHouseContainer}>
                     <FlipCard title={'Birria Tacos'} description='Indulge in tender, slow-cooked shredded beef, marinated in a tantalizing blend of spices, nestled in warm corn tortillas. Topped with diced onions, cilantro, and lime, each bite is a symphony of savory goodness. '  imageSrc={BirriaTaco}/>
 
-                    <FlipCard title={'Tacos'} description='Indulge in the savory delight of our soft tortilla taco! Handcrafted with care, our tacos feature a warm, soft tortilla embracing a delicious medley of fresh ingredients. Whether you prefer tender seasoned meat, zesty veggies, or flavorful beans, each bite is a tantalizing blend of textures and flavors.' imageSrc={Burrito}/>
+                    <FlipCard title={'Tacos'} description='Indulge in the savory delight of our soft tortilla taco! Handcrafted with care, our tacos feature a warm, soft tortilla embracing a delicious medley of fresh ingredients. Whether you prefer tender seasoned meat, zesty veggies, or flavorful beans, each bite is a tantalizing blend of textures and flavors.' imageSrc={Tacos}/>
 
                     <FlipCard title={'Gorditas'} description=' These thick, handmade masa pockets are filled with a medley of mouthwatering options, from seasoned meats to flavorful vegetarian delights.' imageSrc={Gorditas}/>
 
@@ -40,7 +39,7 @@ function HouseSpecials() {
                 <CustomCarousel>
                     <FlipCard title={'Birria Tacos'} description='Indulge in tender, slow-cooked shredded beef, marinated in a tantalizing blend of spices, nestled in warm corn tortillas. Topped with diced onions, cilantro, and lime, each bite is a symphony of savory goodness. '  imageSrc={BirriaTaco}/>
 
-                    <FlipCard title={'Tacos'} description='Indulge in the savory delight of our soft tortilla taco! Handcrafted with care, our tacos feature a warm, soft tortilla embracing a delicious medley of fresh ingredients. Whether you prefer tender seasoned meat, zesty veggies, or flavorful beans, each bite is a tantalizing blend of textures and flavors.' imageSrc={Burrito}/>
+                    <FlipCard title={'Tacos'} description='Indulge in the savory delight of our soft tortilla taco! Handcrafted with care, our tacos feature a warm, soft tortilla embracing a delicious medley of fresh ingredients. Whether you prefer tender seasoned meat, zesty veggies, or flavorful beans, each bite is a tantalizing blend of textures and flavors.' imageSrc={Tacos}/>
 
                     <FlipCard title={'Gorditas'} description=' These thick, handmade masa pockets are filled with a medley of mouthwatering options, from seasoned meats to flavorful vegetarian delights.' imageSrc={Gorditas}/>
 
